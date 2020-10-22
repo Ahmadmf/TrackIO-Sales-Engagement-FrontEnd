@@ -1,0 +1,157 @@
+.footer-align{
+    padding-bottom: 0px;
+}
+.footer-backtotop{
+    background-color:darkgray;
+    color: white;
+    height: 35px;
+    width: 100%;
+  }
+  .footer-align,.footer{
+      bottom:0;
+
+  }
+.footer {
+    padding: 3em;
+    /* justify-content: space-evenly; */
+    /* display: flex;
+    flex-direction: row; */
+    width: auto;
+    height: auto;
+    /* background-color: #fecc36; */
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .top-icon{
+    color: white;
+  }
+  .footer-ui{
+    cursor: pointer;
+    list-style-type: none;
+    max-width: 400px;
+    position: relative;
+    left: -30%;
+  }
+  .footer-ui:first-child{
+    margin-right:auto;
+    margin-left: auto;
+  }
+  .social-icons{
+    flex: 1;
+  }
+  .footer-info{
+    flex: 2;
+    display: flex;
+  }
+  .footer > form {
+    padding: 1em;
+    width: auto;
+    align-items: stretch;
+  }
+  .footer > form > input {
+    font-size: 16px;
+    font-style: italic;
+    padding: 1em;
+  }
+  .footer > form > button {
+    margin: 0;
+    padding: 1em;
+    background-color: transparent;
+    color:black;
+    font-family: inherit;
+    border-style: solid;
+    border-color: white;
+  }
+  .footer-ui > a{
+    font-size: 15px;
+  }
+  .footer-terms{
+    width:max-content;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -40px;
+    position: relative;
+    left: 38%;
+  }
+  .footer-logo{
+    font-size: 30px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .footer-ui-1{
+    font-size: 20px;
+    margin-bottom:10px;
+  }
+  @media screen and (max-width: 700px) {
+    .footer {
+      flex-direction: column;
+    }
+    .footer > form {
+      padding: 0;
+    }
+    .footer-ui{
+      width: 190px;
+      left: -18%;
+    }
+    .footer-terms{
+      left: 0;
+    }
+    .social-icons{
+      display: flex;
+      /* flex-direction: column; */
+    }
+    .footer-icons{
+      display: flex;
+      flex-direction: row;
+    }
+    .footer-icons-div{
+      position: relative;
+      max-width: max-content;;
+      top: -35%;
+      left: 10%;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-us-footer{
+      font-size:15px;
+    }
+    .footer-ui-1{
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    .contact-us-div{
+      width: max-content;
+      font-size: 15px;
+    }
+    .footer-ui{
+      width: 170px;
+      left: -22%;
+    }
+    .footer-terms{
+      left: -10%;
+    }
+    .footer-ui > a{
+      font-size: 13px;
+    }
+    .footer-logo{
+      font-size: 20px;
+      margin-left: -10px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .footer {
+      flex-direction: column;
+    }
+    .footer > form {
+      padding: 0;
+    }
+  }
