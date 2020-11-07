@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Nav, Navbar,NavbarBrand} from 'reactstrap';
+import {Link} from 'react-router-dom';
 import footer from '../components/organisms/footer/footer';
 import NavSection from "../components/organisms/index"
 import "./Home.css"
@@ -60,7 +61,7 @@ class Home extends Component{
               />
               Visulaize Emails Campaigns through Our System
                </p>
-               <Button variant="primary">SignUp Free</Button>
+               <Link to="/sign_up"><Button variant="primary">SignUp Free</Button></Link>
 
 
                     </div>

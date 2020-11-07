@@ -4,6 +4,7 @@ import './App.css';
 import { render } from '@testing-library/react';
 import {Route,Switch,BrowserRouter} from "react-router-dom"
 import Home from "./pages/Home"
+import SignUp from "./pages/SignUp"
 import { Provider } from "react-redux";
 // import store from "./store";
 
@@ -30,8 +31,11 @@ class App extends React.Component{
     return(
         <BrowserRouter>
             <Switch>
-              <Route path={"/"}>
+              <Route exact path={"/"}>
                   <Home />
+              </Route>
+              <Route exact path={"/sign_up"}>
+                  <SignUp />
               </Route>
             </Switch>
         </BrowserRouter>

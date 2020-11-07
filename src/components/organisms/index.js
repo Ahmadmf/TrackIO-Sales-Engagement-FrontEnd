@@ -17,7 +17,7 @@ class Navsection extends Component{
                     <NavLink href="Pricing">Pricing</NavLink>
                     </Nav>
                     <Nav>
-                        <NavLink href="/signUp">Sign Up</NavLink>
+                        <NavLink href="/sign_up">Sign Up</NavLink>
                         <NavLink href="/logIn">Login</NavLink>
                     </Nav>
                 </Navbar>
