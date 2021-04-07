@@ -1,21 +1,20 @@
 import React,{Component} from 'react';
-import {Nav, Navbar,NavbarBrand} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import footer from '../components/organisms/footer/footer';
-import NavSection from "../components/organisms/index"
+import NavBar from "../components/organisms/organisms/nav-bar/index"
 import "./Home.css"
 import {BsFillEnvelopeOpenFill} from "react-icons/bs";
 import {Button} from "reactstrap";
 
 
 class Home extends Component{
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
     render(){
         return(
            <div>
-                <NavSection />
+                <NavBar />
                 <div className="contianer" style={{paddingTop:"25px"}}>
                     <div className="jumbotron">
                     <h1>

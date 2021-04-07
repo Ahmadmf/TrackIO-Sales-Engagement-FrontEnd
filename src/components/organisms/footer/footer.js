@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import { FaFacebookF, FaGreaterThan } from "react-icons/fa";
+import { FaFacebookF} from "react-icons/fa";
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
 export default function footer(){
-    const scrollTop=()=>{
-        window.scrollTo({top:0,behavior:'smooth'});
-    };
+    // const scrollTop=()=>{
+    //     window.scrollTo({top:0,behavior:'smooth'});
+    // };
     return(
         < >
         {/* <div class="footer-align">

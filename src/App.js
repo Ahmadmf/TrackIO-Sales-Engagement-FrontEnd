@@ -1,11 +1,11 @@
-   import React from 'react';
-import {Navbar,NavbarBrand} from 'reactstrap';
+import React from 'react';
 import './App.css';
-import { render } from '@testing-library/react';
 import {Route,Switch,BrowserRouter} from "react-router-dom"
 import Home from "./pages/Home"
 import SignUp from "./pages/SignUp"
-import { Provider } from "react-redux";
+import Campaign from "./pages/campaign"
+import Welcome from "./components/starter/welcome";
+import MailBox from "./components/starter/connectMailbox";
 // import store from "./store";
 
 // function App() {
@@ -20,6 +20,7 @@ import { Provider } from "react-redux";
 //     </div>
 //   );
 // }
+
 class App extends React.Component{
   constructor(){
     super();
@@ -37,6 +38,16 @@ class App extends React.Component{
               <Route exact path={"/sign_up"}>
                   <SignUp />
               </Route>
+              <Route exact path={"/app/dashboard"}>
+                  <Campaign />
+              </Route>
+              <Route exact path={"/app/welcome"}>
+                    <Welcome />
+              </Route>
+              <Route exact path={"/app/mailBox"}>
+                    <MailBox />
+              </Route>
+              
             </Switch>
         </BrowserRouter>
     );

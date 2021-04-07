@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import {Nav, Navbar,NavbarBrand,NavLink} from 'reactstrap';
-class Navsection extends Component{
+class NavBar extends Component{
     constructor(props){
         super(props);
         this.state={};
@@ -29,4 +29,4 @@ class Navsection extends Component{
 
     }
 }
-export default  Navsection;
+export default  NavBar;
