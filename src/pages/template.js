@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import "./campaign.css";
 import NavSection from "../components/organisms/organisms/nav-section";
-import Test from "../components/Modal/test";
 import { BsFillPlusSquareFill,BsFillEnvelopeFill,BsLightning } from "react-icons/bs";
 import {Button} from "reactstrap";
 import {Nav, Navbar, NavLink} from 'reactstrap';
@@ -9,7 +8,8 @@ import C from "../resource/values";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Moment from 'moment';
-class Campaign extends Component{
+import Test from "../components/TemplateModel/index";
+class Template extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -56,9 +56,9 @@ class Campaign extends Component{
             <div class="col-10 right" >
             <Navbar dark color="light">
                 <Nav>
-                            <h2>Campaigns</h2>
+                            <h2>Templates</h2>
                 </Nav>
-                    <Nav>
+                <Nav>
                         <NavLink href="/sign_up">
                         <BsLightning
                                 style={{
@@ -74,70 +74,76 @@ class Campaign extends Component{
                                 marginLeft: "15px",
                                 cursor: "pointer",
                             }}/>
-                        </NavLink>
-                        
-                            {/* <BsFillPlusSquareFill
+                        </NavLink> 
+                        {/* <Button color="primary" type="button" style={{float: "right"}}>
+                        <BsFillPlusSquareFill
                                 style={{
                                 fontSize: "20px",
                                 marginLeft: "15px",
                                 cursor: "pointer",
-                            }}/> */}
-                            {/* <Container triggerText={this.triggerText} onSubmit={this.onSubmit} /> */}
-                            {/* <Button onClick={this.showModal}>New Campaign</Button> */}
-                            {/* <Modal 
-                            func={this.getUpdatedDetails}
-                            detailsType="AddCampaign"
-                            type="EDIT"
-                            /> */}
+                            }}/> New Template</Button> */}
                             <Test
                                 func={this.getUpdatedDetails}
                                 detailsType="AddCampaign"
                                 type="EDIT"
                             />
+                            {/* <Container triggerText={this.triggerText} onSubmit={this.onSubmit} /> */}
+                    
+                            {/* <Modal 
+                            func={this.getUpdatedDetails}
+                            detailsType="AddCampaign"
+                            type="EDIT"
+                            /> */}
+                            {/* <Test
+                                func={this.getUpdatedDetails}
+                                detailsType="AddCampaign"
+                                type="EDIT"
+                            /> */}
                     
                     </Nav>
-                </Navbar>
-                <table className="table mb-0">
+            </Navbar>
+
+            <table className="table mb-0">
                     <thead className="bg-light">
                         <tr className="border-0">
                             <th scope="col" className="border-0">
-                                #
-                            </th>
-                            <th scope="col" className="border-0">
-                                Name
+                                NAME
                             </th>
                             <th scope="col" className="border-0">
                                 CREATED
                             </th>
                             <th scope="col" className="border-0">
-                                PROSPECT
+                                SENT
                             </th>
                             <th scope="col" className="border-0">
-                                REPLIES
+                                OPENED
                             </th>
                             <th scope="col" className="border-0">
-                                STEPS
+                                CLICKED
                             </th>
                             <th scope="col" className="border-0">
-                                DUE
+                                REPLIED
                             </th>
                         </tr>
                     </thead>
                     
                     <tbody>
-                        {this.state.campaigns.map((i,index) => (
-                            <>
                             <tr>
-                                <td>{index+1}</td>
-                                <td><Link to={`/campaign/${i._id}`}>{i.campaignName}</Link></td>
-                                <td>{i.createdAt}</td>
-                                <td>{i.due}</td>
-                                <td>{i.prospect}</td>
-                                <td>{i.replies}</td>
-                                <td>{i.steps}</td>
+                                <td>Big Festival - by Firoz Ahmad</td>
+                                <td>Aug 14</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
                             </tr>
-                            </>
-                        ))}
+                            <tr>
+                                <td>Donation - by M.H AHMAD</td>
+                                <td>Jul 30</td>
+                                <td>5</td>
+                                <td>7%</td>
+                                <td>2%</td>
+                                <td>1%</td>
+                            </tr>
                     </tbody>
 
                 </table>
@@ -152,4 +158,4 @@ class Campaign extends Component{
 
 }
 
-export default Campaign;
+export default Template;

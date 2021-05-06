@@ -23,11 +23,11 @@ class Welcome extends Component{
                     <h2>Let's send your first email</h2>
                 </div>
                 <div style={{textAlign:"center"}}>
-                    <h6>In just 3 steps, you can send your first email to a list of contacts we have added for you. You wil be all set up in less than 5 minutes.</h6>
+                    <h6>In just few steps, you can send your first email to a list of contacts we have added for you. You wil be all set up in less than 5 minutes.</h6>
                 </div>
 
                 <div style={{textAlign:"center"}}>
-                    <Link to="/app/mailBox">
+                    <Link to="/app/dashboard">
                         <Button type="submit" variant="primary">Getting Started</Button>
                     </Link>
                     </div>

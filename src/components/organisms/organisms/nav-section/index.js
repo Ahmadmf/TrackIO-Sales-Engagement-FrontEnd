@@ -1,5 +1,6 @@
 import React, { Component} from "react";
-import {Nav, Navbar,NavbarBrand,NavItem, NavLink} from 'reactstrap';
+import {Nav, Navbar,NavbarBrand,NavItem,NavLink} from 'reactstrap';
+import {Link} from 'react-router-dom';
 // import {NavLink as RouteNavLink} from "react-router-dom";
 // import classNames from "classnames";
 import { BsCursorFill,BsEnvelopeFill,BsFillPersonFill,BsFileEarmarkText,BsPlusSquareFill,BsBarChartFill} from "react-icons/bs";
@@ -51,6 +52,7 @@ class NavSection extends Component{
             <div className="nav-wrapper" >
                 <Nav className="nav--no-borders flex-column">
                     <NavItem>
+                    <Link to="/app/prospects">
                         <NavLink>
                         <BsFillPersonFill
                                 style={{
@@ -64,9 +66,11 @@ class NavSection extends Component{
                             </div>
 
                         </NavLink>
+                    </Link>
                     </NavItem>
 
                     <NavItem>
+                    <Link to="/app/dashboard">
                         <NavLink>
                             <BsCursorFill
                                 style={{
@@ -80,11 +84,13 @@ class NavSection extends Component{
                             </div>
 
                         </NavLink>
+                        </Link>
                     </NavItem>
 
 
                     <NavItem>
-                        <NavLink>
+                    <Link to="/app/templates">
+                        <NavLink to="/sign_up">
                         <BsFileEarmarkText
                                 style={{
                                 fontSize: "30px",
@@ -97,10 +103,12 @@ class NavSection extends Component{
                             </div>
 
                         </NavLink>
+                    </Link>
                     </NavItem>
 
 
                     <NavItem>
+                    <Link to="/app/reporting">
                         <NavLink>
                         <BsBarChartFill
                                 style={{
@@ -114,10 +122,12 @@ class NavSection extends Component{
                             </div>
 
                         </NavLink>
+                    </Link>
                     </NavItem>
 
 
                     <NavItem>
+                    <Link to="/app/outbox">
                         <NavLink>
                         <BsEnvelopeFill
                                 style={{
@@ -131,8 +141,10 @@ class NavSection extends Component{
                             </div>
 
                         </NavLink>
+                    </Link>
                     </NavItem>
                     <NavItem>
+                    <Link to="/app/resources" target="_blank" rel="noopener noreferrer">
                         <NavLink>
                         <BsPlusSquareFill
                                 style={{
@@ -146,6 +158,7 @@ class NavSection extends Component{
                             </div>
 
                         </NavLink>
+                        </Link>
                     </NavItem>
 
 

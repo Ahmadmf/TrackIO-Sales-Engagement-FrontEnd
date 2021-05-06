@@ -9,7 +9,7 @@ import C from "../resource/values";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Moment from 'moment';
-class Campaign extends Component{
+class Reporting extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -56,9 +56,9 @@ class Campaign extends Component{
             <div class="col-10 right" >
             <Navbar dark color="light">
                 <Nav>
-                            <h2>Campaigns</h2>
+                            <h2>Team Overview</h2>
                 </Nav>
-                    <Nav>
+                <Nav>
                         <NavLink href="/sign_up">
                         <BsLightning
                                 style={{
@@ -74,82 +74,88 @@ class Campaign extends Component{
                                 marginLeft: "15px",
                                 cursor: "pointer",
                             }}/>
-                        </NavLink>
-                        
-                            {/* <BsFillPlusSquareFill
+                        </NavLink> 
+                        {/* <Button color="primary" type="button" style={{float: "right"}}>
+                        <BsFillPlusSquareFill
                                 style={{
                                 fontSize: "20px",
                                 marginLeft: "15px",
                                 cursor: "pointer",
-                            }}/> */}
+                            }}/> New Template</Button> */}
                             {/* <Container triggerText={this.triggerText} onSubmit={this.onSubmit} /> */}
-                            {/* <Button onClick={this.showModal}>New Campaign</Button> */}
+                    
                             {/* <Modal 
                             func={this.getUpdatedDetails}
                             detailsType="AddCampaign"
                             type="EDIT"
                             /> */}
-                            <Test
+                            {/* <Test
                                 func={this.getUpdatedDetails}
                                 detailsType="AddCampaign"
                                 type="EDIT"
-                            />
+                            /> */}
                     
                     </Nav>
-                </Navbar>
-                <table className="table mb-0">
+
+            </Navbar>
+
+
+            <table className="table mb-0">
                     <thead className="bg-light">
                         <tr className="border-0">
                             <th scope="col" className="border-0">
-                                #
+                               
                             </th>
                             <th scope="col" className="border-0">
-                                Name
+                                EMAILS SENT
                             </th>
                             <th scope="col" className="border-0">
-                                CREATED
+                                CALLS COMPLETED
                             </th>
                             <th scope="col" className="border-0">
-                                PROSPECT
+                                TASKS COMPLETED
                             </th>
                             <th scope="col" className="border-0">
-                                REPLIES
+                                PROSPECTS CONTACTED
                             </th>
                             <th scope="col" className="border-0">
-                                STEPS
+                                PROSPECTS REPLIED
                             </th>
                             <th scope="col" className="border-0">
-                                DUE
+                                NEW PROSPECTS CONTACTED
                             </th>
                         </tr>
                     </thead>
                     
                     <tbody>
-                        {this.state.campaigns.map((i,index) => (
-                            <>
                             <tr>
-                                <td>{index+1}</td>
-                                <td><Link to={`/campaign/${i._id}`}>{i.campaignName}</Link></td>
-                                <td>{i.createdAt}</td>
-                                <td>{i.due}</td>
-                                <td>{i.prospect}</td>
-                                <td>{i.replies}</td>
-                                <td>{i.steps}</td>
+                                <td>Everyone</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>2</td>
                             </tr>
-                            </>
-                        ))}
+                            <tr>
+                                <td>Firoz Ahmad</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>2</td>
+                            </tr>
                     </tbody>
 
                 </table>
 
             </div>
-
-
-
+            
             </div>
         )
     }
 
 }
 
-export default Campaign;
+export default Reporting;

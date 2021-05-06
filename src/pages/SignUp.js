@@ -63,7 +63,7 @@ class SignUp extends Component{
                 .then((res) =>{
                     console.log(res.data);
                     window.open("/app/welcome");
-                    // history.push("/app/campaign");
+                    // history.push("/app/welcome");
                 })
         //    const body= response.json();
         //     console.log(body);
@@ -93,7 +93,7 @@ class SignUp extends Component{
                     <img src={revImage} class="image" alt="description"></img>
                     </div>
                     <div style={{paddingBottom:"0px"}}>
-                        <h3>M M KHAN</h3>
+                        <h3>Kim John</h3>
                         <p>CEO OF XYZ</p>
                     </div>
 
