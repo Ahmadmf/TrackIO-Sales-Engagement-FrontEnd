@@ -79,7 +79,7 @@ const submitNewCampaign = () => {
                                         <span class="input-group-text"> Receiver Mail ID </span>
                                 
                                         <span >
-                                            <input  name="receiverMail" id="text"  onChange={onChange} placeholder="email" class="form-control" required/>
+                                            <textarea  name="receiverMail" id="text"  onChange={onChange} placeholder="email" class="form-control" required/>
                                         </span>
                                         <span class="input-group-text"> Email Subject</span>
                                 

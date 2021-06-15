@@ -41,7 +41,8 @@ class Campaign extends Component{
             campaignName:value.campaignName,
             dailyProspectNumber:value.dailyProspectNumber
           }
-        await axios.post(C.SERVER_CALL+'/api/campaigns/addCampaign',{campaignDetail:campaignData});                   
+        await axios.post(C.SERVER_CALL+'/api/campaigns/addCampaign',{campaignDetail:campaignData});
+        window.location.reload() ;                  
        
         
     }
